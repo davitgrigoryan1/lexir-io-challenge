@@ -1,25 +1,43 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import MainContainer from "@components/MainContainer/MainContainer";
+import ProductInfo from "@components/ProductInfo/index";
+import ProductContainer from "@components/Products/ProductContainer";
+import { productInfo } from "src/data/productInfo";
+import { Products } from "src/types/products";
 
-export default function Home() {
+import axios from "axios";
+
+interface Props {
+  products: Products[]
+}
+
+export default function Home({ products }: Props) {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Lexir Frontend Assessment!</title>
-        <meta name="description" content="Lexir Frontend Assessment!" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Lexir Frontend Assessment!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
-      </main>
-    </div>
+    <MainContainer
+      content={"Lexir Frontend Assessment!"}
+      title={"Lexir Frontend Assessment!"}
+    >
+      <div className="max-w-[1280px] w-[100%] my-[40px] flex px-[35px]">
+        <ProductInfo data={productInfo} />
+        <ProductContainer data={products} />
+      </div>
+    </MainContainer>
   );
+}
+
+export async function getServerSideProps() {
+  let products;
+
+  try {
+    const { data } = await axios.get("http://localhost:3000/api/products");
+    products = data;
+  } catch (e) {
+    products = [];
+    console.log(e.message);
+  }
+
+  return {
+    props: {
+      products,
+    },
+  };
 }
