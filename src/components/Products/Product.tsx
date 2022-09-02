@@ -12,13 +12,15 @@ const Product: React.FC<Products> = ({
   currency,
   thumbnail,
   thumbnailAlt,
+  width,
+  height
 }) => {
   const dispatch = useDispatch();
 
   return (
     <div className="shadow-light">
       <div className="bg-borderColor py-[20px] px-[40px] flex justify-center items-center h-[232px]">
-        <Image src={thumbnail} alt={thumbnailAlt} />
+        <Image src={thumbnail} alt={thumbnailAlt} width={width} height={height}/>
       </div>
       <div className="bg-white p-[10px]">
         <div>

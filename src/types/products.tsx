@@ -8,4 +8,6 @@ export interface Products {
   currency: string;
   thumbnail: StaticImageData | string;
   thumbnailAlt: string;
+  width: number,
+  height: number
 }

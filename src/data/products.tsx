@@ -1,9 +1,4 @@
 import { Products } from "src/types/products";
-import Umami from "../assets/images/product/packshot-audemus-umami-gin.png";
-import SilentPool from "../assets/images/product/packshot-silent-pool-silent-pool-gin.png"
-import Stockholms from "../assets/images/product/stockholms-branneri-pink-gin-packshot.png"
-import Gaston from "../assets/images/product/packshot-mr-gaston-brandy.png"
-
 
 export const products: Products[] = [
   {
@@ -12,8 +7,10 @@ export const products: Products[] = [
     category: "Brandy",
     price: 32,
     currency: "EUR",
-    thumbnail: Umami,
+    thumbnail: "https://i.ibb.co/W5n3WND/packshot-audemus-umami-gin.png",
     thumbnailAlt: "Packshot audemus umami gin",
+    width: 99,
+    height: 195,
   },
   {
     id: 2,
@@ -21,8 +18,11 @@ export const products: Products[] = [
     category: "Brandy",
     price: 32,
     currency: "EUR",
-    thumbnail: SilentPool,
+    thumbnail:
+      "https://i.ibb.co/gD9JJmW/packshot-silent-pool-silent-pool-gin.png",
     thumbnailAlt: "Packshot silent pool gin",
+    width: 61,
+    height: 195,
   },
   {
     id: 3,
@@ -30,8 +30,11 @@ export const products: Products[] = [
     category: "Brandy",
     price: 32,
     currency: "EUR",
-    thumbnail: Stockholms,
+    thumbnail:
+      "https://i.ibb.co/98NdFFt/stockholms-branneri-pink-gin-packshot.png",
     thumbnailAlt: "Stockholms branneri pink gin packshot",
+    width: 89,
+    height: 194,
   },
   {
     id: 4,
@@ -39,8 +42,10 @@ export const products: Products[] = [
     category: "Brandy",
     price: 32,
     currency: "EUR",
-    thumbnail: Gaston,
+    thumbnail: "https://i.ibb.co/nbW8WVC/packshot-mr-gaston-brandy.png",
     thumbnailAlt: "Packshot mr gaston brand",
+    width: 61,
+    height: 195,
   },
   {
     id: 5,
@@ -48,8 +53,10 @@ export const products: Products[] = [
     category: "Brandy",
     price: 32,
     currency: "EUR",
-    thumbnail: Umami,
+    thumbnail: "https://i.ibb.co/W5n3WND/packshot-audemus-umami-gin.png",
     thumbnailAlt: "Packshot audemus umami gin",
+    width: 99,
+    height: 195,
   },
   {
     id: 6,
@@ -57,8 +64,11 @@ export const products: Products[] = [
     category: "Brandy",
     price: 32,
     currency: "EUR",
-    thumbnail: SilentPool,
+    thumbnail:
+      "https://i.ibb.co/gD9JJmW/packshot-silent-pool-silent-pool-gin.png",
     thumbnailAlt: "Packshot silent pool gin",
+    width: 61,
+    height: 195,
   },
   {
     id: 7,
@@ -66,8 +76,11 @@ export const products: Products[] = [
     category: "Brandy",
     price: 32,
     currency: "EUR",
-    thumbnail: Stockholms,
+    thumbnail:
+      "https://i.ibb.co/98NdFFt/stockholms-branneri-pink-gin-packshot.png",
     thumbnailAlt: "Stockholms branneri pink gin packshot",
+    width: 89,
+    height: 194,
   },
   {
     id: 8,
@@ -75,8 +88,10 @@ export const products: Products[] = [
     category: "Brandy",
     price: 32,
     currency: "EUR",
-    thumbnail: Gaston,
+    thumbnail: "https://i.ibb.co/nbW8WVC/packshot-mr-gaston-brandy.png",
     thumbnailAlt: "Packshot mr gaston brand",
+    width: 61,
+    height: 195,
   },
   {
     id: 9,
@@ -84,8 +99,10 @@ export const products: Products[] = [
     category: "Brandy",
     price: 32,
     currency: "EUR",
-    thumbnail: Umami,
+    thumbnail: "https://i.ibb.co/W5n3WND/packshot-audemus-umami-gin.png",
     thumbnailAlt: "Packshot audemus umami gin",
+    width: 99,
+    height: 195,
   },
   {
     id: 10,
@@ -93,8 +110,11 @@ export const products: Products[] = [
     category: "Brandy",
     price: 32,
     currency: "EUR",
-    thumbnail: SilentPool,
+    thumbnail:
+      "https://i.ibb.co/gD9JJmW/packshot-silent-pool-silent-pool-gin.png",
     thumbnailAlt: "Packshot silent pool gin",
+    width: 61,
+    height: 195,
   },
   {
     id: 11,
@@ -102,8 +122,11 @@ export const products: Products[] = [
     category: "Brandy",
     price: 32,
     currency: "EUR",
-    thumbnail: Stockholms,
+    thumbnail:
+      "https://i.ibb.co/98NdFFt/stockholms-branneri-pink-gin-packshot.png",
     thumbnailAlt: "Stockholms branneri pink gin packshot",
+    width: 89,
+    height: 194,
   },
   {
     id: 12,
@@ -111,8 +134,10 @@ export const products: Products[] = [
     category: "Brandy",
     price: 32,
     currency: "EUR",
-    thumbnail: Gaston,
+    thumbnail: "https://i.ibb.co/nbW8WVC/packshot-mr-gaston-brandy.png",
     thumbnailAlt: "Packshot mr gaston brand",
+    width: 61,
+    height: 195,
   },
   {
     id: 13,
@@ -120,8 +145,10 @@ export const products: Products[] = [
     category: "Brandy",
     price: 32,
     currency: "EUR",
-    thumbnail: Umami,
+    thumbnail: "https://i.ibb.co/W5n3WND/packshot-audemus-umami-gin.png",
     thumbnailAlt: "Packshot audemus umami gin",
+    width: 99,
+    height: 195,
   },
   {
     id: 14,
@@ -129,8 +156,11 @@ export const products: Products[] = [
     category: "Brandy",
     price: 32,
     currency: "EUR",
-    thumbnail: SilentPool,
+    thumbnail:
+      "https://i.ibb.co/gD9JJmW/packshot-silent-pool-silent-pool-gin.png",
     thumbnailAlt: "Packshot silent pool gin",
+    width: 61,
+    height: 195,
   },
   {
     id: 15,
@@ -138,8 +168,11 @@ export const products: Products[] = [
     category: "Brandy",
     price: 32,
     currency: "EUR",
-    thumbnail: Stockholms,
+    thumbnail:
+      "https://i.ibb.co/98NdFFt/stockholms-branneri-pink-gin-packshot.png",
     thumbnailAlt: "Stockholms branneri pink gin packshot",
+    width: 89,
+    height: 194,
   },
   {
     id: 16,
@@ -147,8 +180,10 @@ export const products: Products[] = [
     category: "Brandy",
     price: 32,
     currency: "EUR",
-    thumbnail: Gaston,
+    thumbnail: "https://i.ibb.co/nbW8WVC/packshot-mr-gaston-brandy.png",
     thumbnailAlt: "Packshot mr gaston brand",
+    width: 61,
+    height: 195,
   },
   {
     id: 17,
@@ -156,8 +191,10 @@ export const products: Products[] = [
     category: "Brandy",
     price: 32,
     currency: "EUR",
-    thumbnail: Umami,
+    thumbnail: "https://i.ibb.co/W5n3WND/packshot-audemus-umami-gin.png",
     thumbnailAlt: "Packshot audemus umami gin",
+    width: 99,
+    height: 195,
   },
   {
     id: 18,
@@ -165,8 +202,11 @@ export const products: Products[] = [
     category: "Brandy",
     price: 32,
     currency: "EUR",
-    thumbnail: SilentPool,
+    thumbnail:
+      "https://i.ibb.co/gD9JJmW/packshot-silent-pool-silent-pool-gin.png",
     thumbnailAlt: "Packshot silent pool gin",
+    width: 61,
+    height: 195,
   },
   {
     id: 19,
@@ -174,8 +214,11 @@ export const products: Products[] = [
     category: "Brandy",
     price: 32,
     currency: "EUR",
-    thumbnail: Stockholms,
+    thumbnail:
+      "https://i.ibb.co/98NdFFt/stockholms-branneri-pink-gin-packshot.png",
     thumbnailAlt: "Stockholms branneri pink gin packshot",
+    width: 89,
+    height: 194,
   },
   {
     id: 20,
@@ -183,7 +226,9 @@ export const products: Products[] = [
     category: "Brandy",
     price: 32,
     currency: "EUR",
-    thumbnail: Gaston,
+    thumbnail: "https://i.ibb.co/nbW8WVC/packshot-mr-gaston-brandy.png",
     thumbnailAlt: "Packshot mr gaston brand",
+    width: 61,
+    height: 195,
   },
 ];

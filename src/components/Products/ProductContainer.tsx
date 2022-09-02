@@ -18,6 +18,8 @@ const ProductContainer: React.FC<Props> = ({ data }) => {
           currency={product.currency}
           thumbnail={product.thumbnail}
           thumbnailAlt={product.thumbnailAlt}
+          width={product.width}
+          height={product.height}
           key={product.id}
         />
       ))}
