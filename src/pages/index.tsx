@@ -7,7 +7,7 @@ import { Products } from "src/types/products";
 import axios from "axios";
 
 interface Props {
-  products: Products[]
+  products: Products[];
 }
 
 export default function Home({ products }: Props) {
@@ -32,7 +32,11 @@ export async function getServerSideProps() {
     products = data;
   } catch (e) {
     products = [];
-    console.log(e.message);
+    if (typeof e === "string") {
+      console.log(e.toUpperCase());
+    } else if (e instanceof Error) {
+      console.log(e.message);
+    }
   }
 
   return {
