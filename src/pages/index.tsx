@@ -5,6 +5,7 @@ import { productInfo } from "src/data/productInfo";
 import { Products } from "src/types/products";
 
 import axios from "axios";
+import { GetServerSideProps } from "next/types";
 
 interface Props {
   products: Products[];
@@ -24,11 +25,14 @@ export default function Home({ products }: Props) {
   );
 }
 
-export async function getServerSideProps() {
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const { req } = context;
+  const host = req.headers.host;
+
   let products;
 
   try {
-    const { data } = await axios.get("http://localhost:3000/api/products");
+    const { data } = await axios.get(`http://${host}/api/products`);
     products = data;
   } catch (e) {
     products = [];
